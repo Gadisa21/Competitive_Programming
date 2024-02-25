@@ -7,13 +7,8 @@ class Solution:
             i=0
             while i<len(palindrome) and palindrome[i]=="a":
                 i+=1
-            if i>=len(palindrome):
+            if i>=len(palindrome) or i==len(palindrome)//2:
                 palindrome[-1]="b"
-            elif i==len(palindrome)//2:
-                if palindrome[i]=="a":
-                    palindrome[-1]="a"
-                else:
-                    palindrome[-1]="b"
             else:
                 palindrome[i]="a"
         else:
