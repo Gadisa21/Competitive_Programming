@@ -3,9 +3,8 @@ class Solution:
         nums=[1,2,3,4,5,6,7,8,9]
         ans=[]
         def bc(comb,total,i):
-            if len(comb)==k:
-                if total==n:
-                    ans.append(comb.copy())
+            if len(comb)==k and  total==n :
+                ans.append(comb.copy())
                 return
             if len(nums)<=i or total>n:
                 return 
