@@ -3,6 +3,7 @@ class UnionFind:
     def __init__(self,n):
         self.parent={i:i for i in range(1,n+1)}
         self.rank=[0]*(n+1)
+        self.size=[]
 
     def find(self,x):
 
