@@ -1,4 +1,3 @@
-from collections import defaultdict
 t=int(input())
 
 for _ in range(t):
