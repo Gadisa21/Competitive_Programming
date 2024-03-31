@@ -1,4 +1,4 @@
-
+//taking inputs
 n, m = map(int, input().split())
 
 base_candies = n // m
