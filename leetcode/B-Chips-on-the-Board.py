@@ -1,0 +1,10 @@
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    a = list(map(int, input().split()))
+    b = list(map(int, input().split()))
+    mn = min(a)
+    mmn = min(b)
+    ans1 = sum(mn + b[i] for i in range(n))
+    ans2 = sum(mmn + a[i] for i in range(n))
+    print(min(ans1, ans2))
